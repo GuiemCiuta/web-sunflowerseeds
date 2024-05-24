@@ -1,0 +1,32 @@
+{
+    "hero.title_1": "Una",
+    "hero.title_2": "nueva",
+    "hero.title_3": "forma de leer",
+    "hero.subtitle": "Gratuita y de código abierto",
+    "hero.open_app_button": "Abrir la app",
+    "hero.see_source_code_button": "Código fuente",
+
+    "intro.title_1": "La solución perfecta para leer en",
+    "intro.title_2": "una",
+    "intro.title_3": "cualquier",
+    "intro.title_4": "pantalla",
+
+    "options.title": "Muuuuuuuuuuuuuuu🐄uuuuuuuuuuuuchas opciones",
+    "options.change_size": "Cambiar tamaño",
+    "options.change_line_height": "Cambiar espaciado entre líneas",
+    "options.change_words_spacing": "Cambiar espaciado entre palabras",
+    "options.change_letters_spacing": "Cambiar espaciado entre letras",
+    "options.highlight_ambiguous_letters.title": "Resaltar letras confusas",
+    "options.highlight_ambiguous_letters.sample": "dábale arroz a la zorra el abad",
+    "options.much_more": "... y mucho más",
+
+    "features.title": "Te encantarán sus funcionalidades",
+    "features.text": "SunflowerSeeds cuenta con las funciones más típicas de cualquier lector, más algunas que no encontrarás en ningún otro sitio.",
+    "features.text_to_speech.title": "Texto a voz",
+    "features.text_to_speech.text": "Texto a voz es una función muy útil porque blah blah blah",
+    "features.share_text.title": "Compartir texto",
+    "features.ocr.title": "Escaneo de imágenes a texto",
+
+    "other_apps.title": "¿No te hemos convencido?",
+    "other_apps.text": "Nos sabe mal. Pero no queremos que te vayas con las manos vacías.<br/>Aquí te dejamos un listado de aplicaciones similares que quizás te interesen."
+} 
