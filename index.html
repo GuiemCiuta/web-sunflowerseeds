@@ -1,20 +1,151 @@
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>SunflowerSeeds | App gratis para personas con dislexia</title>
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
+
 <body>
-    <main>
-        <header class="hero">
-            <h1 class="hero__title" data-role="hero.title_1"></h1>
-        </header>
-    </main>
+    <div class="container">
+        <section class="hero">
+            <header class="hero__header">
+                <div class="hero__logo-wrapper">
+                    <img src="./imgs/logo_108x108.png" alt="SunflowerSeeds" class="hero__logo" />
+                </div>
+
+                <div class="hero__titles-wrapper">
+                    <h1 class="hero__title">
+                        <span data-role="hero.title_1"></span>
+                        <span data-role="hero.title_2"></span>
+                        <span data-role="hero.title_3"></span>
+                    </h1>
+                    <h2 class="hero__subtitle" data-role="hero.subtitle"></h2>
+                </div>
+            </header>
+
+
+            <main class="hero__main-content">
+                <div class="hero__non-imgs-container">
+                    <div class="sunflowerseeds-fog" data-role="sunflowerseeds-fog"></div>
+
+                    <div class="hero__buttons-container">
+                        <button class="button button--main" data-role="hero.open_app_button"></button>
+                        <button class="button button--secondary" data-role="hero.see_source_code_button"></button>
+                    </div>
+                </div>
+
+                <img src="./imgs/mockup-portatil.png" alt="Vista previa de la app SunflowerSeeds"
+                    class="hero__main-pic" />
+            </main>
+
+
+            <div class="hero__sunflowers-row">
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+                <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
+            </div>
+        </section>
+
+        <section id="section-pantalla" class="section section--intro section--blanco">
+            <h2 class="section__title section--blanco__title">
+                <span data-role="intro.title_1"></span>
+                <span class="word-change" data-role="intro.title_2"></span>
+                <span data-role="intro.title_3"></span>
+            </h2>
+
+            <div class="screens-carousel" id="screens-carousel">
+                <img src="./imgs/mockup-portatil.png" alt="Vista previa de la app SunflowerSeeds"
+                    class="screens-carousel__pic" />
+                <img src="./imgs/mockup-tablet.png" alt="Vista previa de la app SunflowerSeeds"
+                    class="screens-carousel__pic" />
+                <img src="./imgs/mockup-movil.png" alt="Vista previa de la app SunflowerSeeds"
+                    class="screens-carousel__pic" />
+            </div>
+        </section>
+
+        <section id="section-options" class="section section--options">
+            <img src="./imgs/gear250x250.png" alt="Engranaje de decoración" class="deco-gear deco-gear--1">
+            <img src="./imgs/gear250x250.png" alt="Engranaje de decoración" class="deco-gear deco-gear--2">
+            <img src="./imgs/gear250x250.png" alt="Engranaje de decoración" class="deco-gear deco-gear--3">
+            <img src="./imgs/gear250x250.png" alt="Engranaje de decoración" class="deco-gear deco-gear--4">
+
+            <h2 class="section__title">
+                <span data-role="options.title"></span>
+            </h2>
+
+            <div class="options">
+                <label class="options__opcion">
+                    <span id="label-tamanio" class="options__lbl" data-role="options.change_size"></span>
+
+                    <input id="input-tamanio" type="range" class="options__input">
+                </label>
+
+                <label class="options__opcion">
+                    <span id="label-interlineado" class="options__lbl" data-role="options.change_line_height"></span>
+
+                    <input id="input-interlineado" type="range" class="options__input">
+                </label>
+
+                <label class="options__opcion">
+                    <span id="label-espaciado-palabras" class="options__lbl" data-role="options.change_words_spacing"></span>
+
+                    <input id="input-espaciado-palabras" value="25" type="range" class="options__input">
+                </label>
+
+                <label class="options__opcion">
+                    <span id="label-espaciado-letras" class="options__lbl" data-role="options.change_letters_spacing"></span>
+
+                    <input id="input-espaciado-letras" value="10" type="range" class="options__input">
+                </label>
+            </div>
+
+            <section class="highlight-letters">
+                <div class="highlight-letters__title">
+                    <span class="highlight-letters__lbl" data-role="options.highlight_ambiguous_letters.title"></span>
+
+                    <label class="switch">
+                        <input id="resaltar-letras-switch" class="switch__checkbox" type="checkbox">
+                        <span class="deco"></span>
+                    </label>
+                </div>
+
+                <div class="highlight-letters__sample-text" data-role="options.highlight_ambiguous_letters.sample">
+                </div>
+            </section>
+        </section>
+
+        <section class="section section--features">
+            <h2 class="section__title">
+                <span data-role="features.title"></span>
+            </h2>
+        </section>
+
+        <section class="section section--test"></section>
+    </div>
 
     <script src="./js/scrollmagic.js"></script>
     <script src="./js/scrollmagic-indicadors.js"></script>
+    <script src="./js/load-lang.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="./js/options.js"></script>
 
 </body>
+
 </html>

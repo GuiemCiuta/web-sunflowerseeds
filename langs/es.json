@@ -8,16 +8,16 @@
 
     "intro.title_1": "La solución perfecta para leer en",
     "intro.title_2": "una",
-    "intro.title_3": "cualquier",
-    "intro.title_4": "pantalla",
+    "intro.title_2_alt": "cualquier",
+    "intro.title_3": "pantalla",
 
-    "options.title": "Muuuuuuuuuuuuuuu🐄uuuuuuuuuuuuchas opciones",
+    "options.title": "Muuuuuuuuuuuuuuu🐄uuuuuuuuuuuuchas<br/>opciones",
     "options.change_size": "Cambiar tamaño",
-    "options.change_line_height": "Cambiar espaciado entre líneas",
+    "options.change_line_height": "Cambiar espaciado<br/>entre líneas",
     "options.change_words_spacing": "Cambiar espaciado entre palabras",
     "options.change_letters_spacing": "Cambiar espaciado entre letras",
     "options.highlight_ambiguous_letters.title": "Resaltar letras confusas",
-    "options.highlight_ambiguous_letters.sample": "dábale arroz a la zorra el abad",
+    "options.highlight_ambiguous_letters.sample": "<span class='letra-d'>d</span>á<span class='letra-b'>b</span>ale arroz a la zorra el a<span class='letra-b'>b</span>a<span class='letra-d'>d</span>",
     "options.much_more": "... y mucho más",
 
     "features.title": "Te encantarán sus funcionalidades",
