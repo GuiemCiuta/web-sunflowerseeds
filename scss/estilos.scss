@@ -113,6 +113,11 @@ section {
     height: 105svh;
   }
 
+  &--features {
+    height: 100vh;
+    height: 100svh;
+  }
+
   &--options {
     overflow: hidden;
     position: relative;
@@ -291,7 +296,8 @@ section {
 .highlight-letters {
   display: block;
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
   width: 35%;
   min-width: 25rem;
 
