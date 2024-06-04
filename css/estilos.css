@@ -10,7 +10,7 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
+html, body {
   margin: 0;
   overflow-x: hidden;
   font-family: Inter;
@@ -47,6 +47,7 @@ section {
   display: inline-block;
   padding: 0.2rem;
   border-radius: 50%;
+  aspect-ratio: 1/1;
 }
 .hero__logo {
   height: 5rem;
@@ -338,15 +339,6 @@ section {
   background-color: #a301d0;
 }
 
-@media screen and (max-width: 500px) {
-  .options {
-    display: block;
-    width: 100%;
-  }
-  .options__opcion {
-    margin-bottom: 5rem;
-  }
-}
 .letra-b {
   transition: all 0.3s;
 }
@@ -361,6 +353,63 @@ section {
 .letra-d--active {
   transition: all 0.3s;
   color: rgb(91, 129, 33);
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+.paragraph--white {
+  color: white;
+}
+.paragraph--half-width {
+  width: 45%;
+}
+
+.alternatives-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: auto;
+  margin-top: 15rem;
+  justify-content: center;
+  gap: 10rem;
+}
+.alternatives-list__li {
+  text-align: center;
+}
+.alternatives-list__img {
+  display: block;
+  margin-bottom: 2rem;
+  height: 8rem;
+  max-width: 10rem;
+}
+.alternatives-list__link {
+  display: block;
+  padding: 1rem 1.3rem;
+  background-color: white;
+  color: #5401d0;
+  border-radius: 300px;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+.alternatives-list__link:hover {
+  transform: scale(1.02);
+  transition: all 0.1s;
+}
+.alternatives-list__link:active {
+  transform: scale(0.97);
+  transition: all 0.1s;
+}
+
+@media screen and (max-width: 500px) {
+  .options {
+    display: block;
+    width: 100%;
+  }
+  .options__opcion {
+    margin-bottom: 5rem;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

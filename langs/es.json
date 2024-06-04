@@ -27,6 +27,6 @@
     "features.share_text.title": "Compartir texto",
     "features.ocr.title": "Escaneo de imágenes a texto",
 
-    "other_apps.title": "¿No te hemos convencido?",
-    "other_apps.text": "Nos sabe mal. Pero no queremos que te vayas con las manos vacías.<br/>Aquí te dejamos un listado de aplicaciones similares que quizás te interesen."
+    "alternatives.title": "¿No te hemos convencido?",
+    "alternatives.text": "Nos sabe mal. Pero no queremos que te vayas con las manos vacías.<br/><br/>Aquí te dejamos un listado de aplicaciones similares que quizás te interesen."
 } 

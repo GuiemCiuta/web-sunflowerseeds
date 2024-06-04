@@ -1,7 +1,7 @@
 @import "./global-vars.scss";
 @import "./fonts.scss";
 
-body {
+html, body {
   margin: 0;
   overflow-x: hidden;
   font-family: Inter;
@@ -39,6 +39,7 @@ section {
     display: inline-block;
     padding: 0.2rem;
     border-radius: 50%;
+    aspect-ratio: 1 / 1;
   }
 
   &__logo {
@@ -362,11 +363,85 @@ section {
   border-radius: 50%;
 }
 
-.switch__checkbox:checked + .deco:before {
+.switch__checkbox:checked+.deco:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
   background-color: $pink;
+}
+
+
+
+.letra-b {
+  transition: all 0.3s;
+
+  &--active {
+    transition: all 0.3s;
+    color: rgb(223, 145, 0);
+  }
+}
+
+.letra-d {
+  transition: all 0.3s;
+
+  &--active {
+    transition: all 0.3s;
+    color: rgb(91, 129, 33);
+  }
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  opacity: .8;
+
+  &--white {
+    color: white;
+  }
+
+  &--half-width {
+    width: 45%;
+  }
+}
+
+.alternatives-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: auto;
+  margin-top: 15rem;
+  justify-content: center;
+  gap: 10rem;
+
+  &__li {
+    text-align: center;
+  }
+
+  &__img {
+    display: block;
+    margin-bottom: 2rem;
+    height: 8rem;
+    max-width: 10rem;
+  }
+
+  &__link {
+    display: block;
+    padding: 1rem 1.3rem;
+    background-color: $white;
+    color: $purple;
+    border-radius: 300px;
+    text-decoration: none;
+    transition: all .1s;
+
+    &:hover {
+      transform: scale(1.02);
+      transition: all .1s;
+    }
+
+    &:active {
+      transform: scale(.97);
+      transition: all .1s;
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -377,21 +452,5 @@ section {
     &__opcion {
       margin-bottom: 5rem;
     }
-  }
-}
-
-.letra-b {
-  transition: all 0.3s;
-  &--active {
-    transition: all 0.3s;
-    color: rgb(223, 145, 0);
-  }
-}
-
-.letra-d {
-  transition: all 0.3s;
-  &--active {
-    transition: all 0.3s;
-    color: rgb(91, 129, 33);
   }
 }
