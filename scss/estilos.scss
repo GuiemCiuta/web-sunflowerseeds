@@ -447,20 +447,47 @@ section {
   z-index: 2;
 }
 
+.explanation-wrapper {
+  width: 50%;
+}
+
+.features-deco-img {
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.section--features {
+  display: flex;
+  gap: 15%;
+  overflow: hidden;
+}
+
+.features-wrapper {
+  transform: translateY(5%);
+}
+
 .feature {
+  max-width: 25rem;
+  margin-top: 10rem;
+
   &__title-wrapper {
     display: flex;
     align-items: center;
     gap: 1rem;
   }
-
+  
   &__title {
     font-size: 2rem;
     font-weight: lighter;
   }
-
+  
   &__text {
+    margin-top: 0;
     font-size: 1.2rem;
+    opacity: .8;
+    line-height: 1.7rem;
   }
 }
 
@@ -498,15 +525,13 @@ section {
   &__whole-pic,
   &__cropped-pic {
     height: 100%;
+    pointer-events: none;
     position: absolute;
   }
 
-  &__whole-pic {
-    filter: grayscale(1);
-  }
 
   &__cropped-pic {
-    filter: hue-rotate(215deg);
+    
     clip-path: polygon(25% 20%, 82% 20%, 82% 70%, 25% 70%);
     z-index: 1;
   }
