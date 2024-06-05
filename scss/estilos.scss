@@ -1,7 +1,8 @@
 @import "./global-vars.scss";
 @import "./fonts.scss";
 
-html, body {
+html,
+body {
   margin: 0;
   overflow-x: hidden;
   font-family: Inter;
@@ -363,21 +364,19 @@ section {
   border-radius: 50%;
 }
 
-.switch__checkbox:checked+.deco:before {
+.switch__checkbox:checked + .deco:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
   background-color: $pink;
 }
 
-
-
 .letra-b {
   transition: all 0.3s;
 
   &--active {
     transition: all 0.3s;
-    color: rgb(207, 57, 57)
+    color: rgb(207, 57, 57);
   }
 }
 
@@ -386,13 +385,13 @@ section {
 
   &--active {
     transition: all 0.3s;
-    color: rgb(66, 187, 66)
+    color: rgb(66, 187, 66);
   }
 }
 
 .paragraph {
   font-size: 1.5rem;
-  opacity: .8;
+  opacity: 0.8;
 
   &--white {
     color: white;
@@ -430,16 +429,16 @@ section {
     color: $purple;
     border-radius: 300px;
     text-decoration: none;
-    transition: all .1s;
+    transition: all 0.1s;
 
     &:hover {
       transform: scale(1.02);
-      transition: all .1s;
+      transition: all 0.1s;
     }
 
     &:active {
-      transform: scale(.97);
-      transition: all .1s;
+      transform: scale(0.97);
+      transition: all 0.1s;
     }
   }
 }
@@ -449,16 +448,17 @@ section {
 }
 
 .feature-trigger {
-    border-radius: 50%;
-    height: 4rem;
-    width: 4rem;
-  
-    &__img {
-      height: 100%;
-      
-    }
-}
+  border: none;
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+  padding: 0.5rem;
 
+  &__img {
+    display: block;
+    height: 100%;
+  }
+}
 
 @media screen and (max-width: 500px) {
   .options {
