@@ -377,7 +377,7 @@ section {
 
   &--active {
     transition: all 0.3s;
-    color: rgb(223, 145, 0);
+    color: rgb(207, 57, 57)
   }
 }
 
@@ -386,7 +386,7 @@ section {
 
   &--active {
     transition: all 0.3s;
-    color: rgb(91, 129, 33);
+    color: rgb(66, 187, 66)
   }
 }
 
@@ -410,7 +410,7 @@ section {
   margin: auto;
   margin-top: 15rem;
   justify-content: center;
-  gap: 10rem;
+  gap: 10vw;
 
   &__li {
     text-align: center;
@@ -443,6 +443,22 @@ section {
     }
   }
 }
+
+.section-container {
+  z-index: 2;
+}
+
+.feature-trigger {
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+  
+    &__img {
+      height: 100%;
+      
+    }
+}
+
 
 @media screen and (max-width: 500px) {
   .options {

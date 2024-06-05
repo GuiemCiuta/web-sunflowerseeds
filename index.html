@@ -2,7 +2,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>SunflowerSeeds | App gratis para personas con dislexia</title>
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
@@ -11,8 +12,10 @@
     <div class="container">
         <section class="hero">
             <header class="hero__header">
-                <div class="hero__logo-wrapper">
-                    <img src="./imgs/logo_108x108.png" alt="SunflowerSeeds" class="hero__logo" />
+                <div>
+                    <div class="hero__logo-wrapper">
+                        <img src="./imgs/logo_108x108.png" alt="SunflowerSeeds" class="hero__logo" />
+                    </div>
                 </div>
 
                 <div class="hero__titles-wrapper">
@@ -141,6 +144,17 @@
             <p class="paragraph" data-role="features.text"></p>
 
 
+            <div class="features-wrapper">
+                <section class="feature">
+                    <div class="feature__title-wrapper">
+                        <h3 class="feature__title" data-role="features.text_to_speech.title"></h3>
+                        <button class="feature-trigger">
+                            <img class="feature-trigger___img" src="./imgs/icons/audio.svg" />
+                        </button>
+                    </div>
+                    <p class="feature__text" data-role="features.text_to_speech.text"></p>
+                </section>
+            </div>
         </section>
 
         <section class="section section--alternatives">
@@ -164,7 +178,7 @@
                         Helperbird
                     </a>
                 </li>
-                
+
                 <li class="alternatives-list__li">
                     <img src="./imgs/voice-dream.png" alt="Voice Dream app" class="alternatives-list__img">
                     <a href="" target="_blank" class="alternatives-list__link">
