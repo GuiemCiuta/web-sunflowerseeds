@@ -2,12 +2,11 @@ let texts;
 const DEFAULT_LANG = "es";
 
 function assignTextToElement(role, text) {
-    const element = document.querySelector(`[data-role="${role}"]`);
+    const elements = document.querySelectorAll(`[data-role="${role}"]`);
 
-    if (element) {
+    for(let element of elements) {
         element.innerHTML = text;
     }
-
 }
 
 async function fetchLang(lang) {

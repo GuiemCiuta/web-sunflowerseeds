@@ -16,7 +16,7 @@
     "options.change_line_height": "Cambiar espaciado<br/>entre líneas",
     "options.change_words_spacing": "Cambiar espaciado entre palabras",
     "options.change_letters_spacing": "Cambiar espaciado entre letras",
-    "options.highlight_ambiguous_letters.title": "Resaltar letras confusas",
+    "options.highlight_ambiguous_letters.title": "Diferenciar letras",
     "options.highlight_ambiguous_letters.sample": "<span class='letra-d'>d</span>á<span class='letra-b'>b</span>ale arroz a la zorra el a<span class='letra-b'>b</span>a<span class='letra-d'>d</span>",
     "options.much_more": "... y mucho más",
 

@@ -66,6 +66,7 @@ section {
 .hero__title {
   font-size: 2.5rem;
   font-weight: 200;
+  line-height: 2.7rem;
   margin: 0;
   padding: 0;
 }
@@ -77,6 +78,7 @@ section {
   font-weight: 100;
   opacity: 0.8;
   margin: 0;
+  margin-top: 1rem;
 }
 .hero__main-content {
   display: flex;
@@ -161,6 +163,15 @@ section {
   color: white;
   background-color: rgba(255, 255, 255, 0.2);
 }
+.button--wide {
+  max-width: 20rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.button--center {
+  display: block;
+  margin: auto;
+}
 .button:hover {
   transform: scale(1.02);
   transition: all 0.2s;
@@ -183,7 +194,7 @@ section {
 }
 .screens-carousel__pic {
   height: 100%;
-  margin-left: 22%;
+  margin-left: 12rem;
 }
 
 .options {
@@ -558,13 +569,20 @@ section {
     margin-top: 5rem;
   }
   .screens-carousel__pic {
-    height: 60%;
+    height: 80%;
+  }
+  .screens-carousel__pic:first-child {
+    margin-left: 5rem;
+  }
+  .section--features {
+    height: initial;
   }
   .features-explanation-wrapper {
     display: none;
   }
   .features-wrapper {
     width: 100%;
+    transform: none;
   }
   .feature {
     max-width: initial;
@@ -580,6 +598,16 @@ section {
   }
   .share-text-container__text {
     width: 40%;
+  }
+  .ocr-container {
+    height: 35rem;
+  }
+  .ocr-container__whole-pic, .ocr-container__cropped-pic {
+    width: auto;
+    height: 100%;
+  }
+  .ocr-container__text {
+    width: 30%;
   }
 }
 @media screen and (max-width: 500px) {
