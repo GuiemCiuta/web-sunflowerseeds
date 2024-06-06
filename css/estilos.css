@@ -590,24 +590,29 @@ section {
   .paragraph--half-width {
     width: 100%;
   }
+  .share-text-container {
+    width: 100%;
+  }
   .share-text-container__computer {
     display: block;
-    height: 20rem;
-    width: initial;
+    width: 100%;
     margin: auto;
   }
   .share-text-container__text {
-    width: 40%;
+    width: 20%;
   }
   .ocr-container {
     height: 35rem;
+    position: relative;
   }
   .ocr-container__whole-pic, .ocr-container__cropped-pic {
     width: auto;
-    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
   }
-  .ocr-container__text {
+  .ocr-container__scanned-text {
     width: 30%;
+    display: none;
   }
 }
 @media screen and (max-width: 500px) {
