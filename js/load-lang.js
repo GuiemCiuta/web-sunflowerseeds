@@ -1,19 +1,16 @@
 let texts;
+const DEFAULT_LANG = "es";
 
 function assignTextToElement(role, text) {
     const element = document.querySelector(`[data-role="${role}"]`);
 
-    console.log(role)
-
     if (element) {
-        console.log(text);
         element.innerHTML = text;
     }
 
 }
 
 async function fetchLang(lang) {
-    const DEFAULT_LANG = "es";
 
     if (!lang) {
         lang = DEFAULT_LANG;

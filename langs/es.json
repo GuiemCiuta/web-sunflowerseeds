@@ -11,7 +11,7 @@
     "intro.title_2_alt": "cualquier",
     "intro.title_3": "pantalla",
 
-    "options.title": "Muuuuuuuuuuuuuuu🐄uuuuuuuuuuuuchas<br/>opciones",
+    "options.title": "Muuuuuchas opciones",
     "options.change_size": "Cambiar tamaño",
     "options.change_line_height": "Cambiar espaciado<br/>entre líneas",
     "options.change_words_spacing": "Cambiar espaciado entre palabras",
@@ -25,7 +25,8 @@
     "features.text_to_speech.title": "Texto a voz",
     "features.text_to_speech.text": "Texto a voz es una función muy útil porque a veces la lectura cansa la vista. Seguro que te ha pasado: estás leyendo una parrafada (como ésta) y de repente se te cierran los ojos. Puedes forzarte la vista... ¡o puedes darle click a \"play\" y poder cerrar los ojos con tranquilidad mientras escuchas una voz (un poco robótica) que lee para ti!<br /><br />Puedes probar de hacer click en el icono del altavoz.",
     "features.share_text.title": "Compartir texto",
-    "features.ocr.title": "Escaneo de imágenes a texto",
+    "features.share_text.text": "Menorca es una isla española situada en la parte nororiental del archipiélago balear, en el mar Mediterráneo...",
+    "features.ocr.title": "Escaneo de imágenes a texto con IA",
 
     "alternatives.title": "¿No te hemos convencido?",
     "alternatives.text": "Nos sabe mal. Pero no queremos que te vayas con las manos vacías.<br/><br/>Aquí te dejamos un listado de aplicaciones similares que quizás te interesen."

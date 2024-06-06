@@ -9,9 +9,7 @@ const screensScene = new ScrollMagic.Scene({
   .addTo(controller); // assign the scene to the controller
 
 screensScene.on("progress", function (event) {
-  document.getElementById("screens-carousel").style.transform = `translateX(-${
-    event.progress * 100
-  }%)`;
+  document.getElementById("screens-carousel").style.transform = `translateX(-${event.progress * 100}%)`;
 
   if (event.progress > 0.35) {
     document.querySelector(`[data-role="intro.title_2"]`).innerHTML =
@@ -31,35 +29,46 @@ screensScene.on("progress", function (event) {
 const featuresScene = new ScrollMagic.Scene({
   triggerElement: "#section-funcionalidades",
   triggerHook: 0,
-  duration: 2000, // the scene should last for a scroll distance of 100px
+  duration: "300%", // the scene should last for a scroll distance of 100px
 })
   .setPin("#section-funcionalidades") // pins the element for the the scene's duration
   .addTo(controller); // assign the scene to the controller
 
 featuresScene.on("progress", function (event) {
-  const firstActDuration = 0.7;
-  const firstActProgress = event.progress / firstActDuration;
+  const firstActOffset = .2;
+  const firstActDuration = 0.2;
+  const firstActProgress = (event.progress - firstActOffset) / firstActDuration;
 
-  const secondActDuration = 1 - firstActDuration;
+  const secondActOffset = .65;
+  const secondActDuration = .15;
+  const secondActProgress = (event.progress - secondActOffset) / secondActDuration;
 
-  if (firstActDuration > event.progress) {
-    document.getElementById(
-      "features-wrapper"
-    ).style.transform = `translateY(-${firstActProgress * 113}%)`;
-  } else if (secondActDuration > event.progress - firstActDuration) {
-    console.log("hola");
-    //document.getElementById("ocr-whole-pic").style.;
+  const thirdActOffset = .9;
+  const thirdActDuration = 1 - thirdActOffset;
+  const thirdActProgress = (event.progress - thirdActOffset) / thirdActDuration;
 
-    const secondActProgress =
-      (event.progress - firstActDuration) / secondActDuration;
+  // En el último acto no habrá scroll
+  if (event.progress < secondActOffset) {
+    document.getElementById("features-wrapper").style.transform = `translateY(-${event.progress * 300}%)`;
+  }
 
-    console.log(secondActProgress);
 
-    document.getElementById("ocr-whole-pic").style.filter = `grayscale(${
-      secondActProgress * 100
-    }%)`;
+  if (event.progress > firstActOffset) {
+    document.getElementById("share-text-text").style.transform = `translateY(${firstActProgress * 300 - 200}%)`;
 
-    document.getElementById("ocr-whole-pic").style.opacity =
-      1 - secondActProgress * .4;
+    if (event.progress > .45) {
+      document.getElementById("portatil-vacio").src = "./imgs/mockup-portatil.png";
+    } else {
+      document.getElementById("portatil-vacio").src = "./imgs/mockup-portatil-vacio.png";
+    }
+  }
+
+  if (event.progress > secondActOffset) {
+    document.getElementById("ocr-whole-pic").style.opacity = 1 - secondActProgress;
+  }
+
+  if (event.progress > thirdActOffset) {
+    document.getElementById("ocr-cropped-pic").style.opacity = 1 - thirdActProgress;
   }
 });
+
