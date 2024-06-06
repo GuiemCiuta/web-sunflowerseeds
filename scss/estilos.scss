@@ -587,6 +587,10 @@ section {
     line-height: 1.8rem;
     transform: translate(-25%, -50%);
   }
+
+  &__mobile-effect {
+    display: none;
+  }
 }
 
 .footer {
@@ -623,6 +627,7 @@ section {
     opacity: .4;
   }
 }
+
 
 @media screen and (max-width: 1000px) {
   .screens-carousel {
@@ -662,21 +667,38 @@ section {
 
   .share-text-container {
     width: 100%;
+    position: relative;
+    overflow: visible;
 
     &__computer {
       display: block;
-      width: 100%;
       margin: auto;
+      margin-top: 12rem;
+      position: relative;
+      width: 100%;
     }
 
     &__text {
-      width: 20%;
+      width: 75%;
+      left: 15%;
+      display: block;
+      position: absolute;
+      animation: share-text 3s infinite;
+    }
+  }
+
+  @keyframes share-text {
+    from {
+      transform: translateY(-200%);
+    }
+
+    to {
+      transform: translateY(150%);
     }
   }
 
   .ocr-container {
     height: 35rem;
-
     position: relative;
 
     &__whole-pic,

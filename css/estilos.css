@@ -531,6 +531,9 @@ section {
   line-height: 1.8rem;
   transform: translate(-25%, -50%);
 }
+.ocr-container__mobile-effect {
+  display: none;
+}
 
 .footer {
   background-color: #1a1a1a;
@@ -592,14 +595,30 @@ section {
   }
   .share-text-container {
     width: 100%;
+    position: relative;
+    overflow: visible;
   }
   .share-text-container__computer {
     display: block;
-    width: 100%;
     margin: auto;
+    margin-top: 12rem;
+    position: relative;
+    width: 100%;
   }
   .share-text-container__text {
-    width: 20%;
+    width: 75%;
+    left: 15%;
+    display: block;
+    position: absolute;
+    animation: share-text 3s infinite;
+  }
+  @keyframes share-text {
+    from {
+      transform: translateY(-200%);
+    }
+    to {
+      transform: translateY(150%);
+    }
   }
   .ocr-container {
     height: 35rem;
