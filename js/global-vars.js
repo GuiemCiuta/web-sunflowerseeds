@@ -1,0 +1,1 @@
+const WIDTH_BREAKPOINT = 1000;

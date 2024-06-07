@@ -112,6 +112,7 @@ section {
 .section {
   box-sizing: border-box;
   padding: 2.5rem;
+  overflow: hidden;
 }
 .section--intro {
   height: 105vh;
@@ -601,23 +602,34 @@ section {
   .share-text-container__computer {
     display: block;
     margin: auto;
-    margin-top: 12rem;
     position: relative;
     width: 100%;
+  }
+  .share-text-container__computer--2 {
+    margin-top: 12rem;
+    animation: share-text-change-pic 3s infinite;
   }
   .share-text-container__text {
     width: 75%;
     left: 15%;
     display: block;
     position: absolute;
-    animation: share-text 3s infinite;
+    animation: share-text-move-text 3s infinite;
   }
-  @keyframes share-text {
+  @keyframes share-text-move-text {
     from {
       transform: translateY(-200%);
     }
     to {
       transform: translateY(150%);
+    }
+  }
+  @keyframes share-text-change-pc {
+    from {
+      content: url("../imgs/mockup-portatil-vacio.png");
+    }
+    to {
+      content: url("../imgs/mockup-portatil.png");
     }
   }
   .ocr-container {

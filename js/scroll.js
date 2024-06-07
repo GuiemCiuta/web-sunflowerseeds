@@ -36,7 +36,7 @@ const featuresScene = new ScrollMagic.Scene({
   .addTo(controller); // assign the scene to the controller
 
 featuresScene.on("progress", function (event) {
-  if(window.innerWidth < 1000) {
+  if (window.innerWidth < WIDTH_BREAKPOINT) {
     featuresScene.destroy();
     return;
   }
@@ -55,9 +55,8 @@ featuresScene.on("progress", function (event) {
 
   // En el último acto no habrá scroll
   if (event.progress < secondActOffset) {
-    document.getElementById("features-wrapper").style.transform = `translateY(-${event.progress * 300}%)`;
+    document.getElementById("features-wrapper").style.transform = `translateY(-${event.progress * 320 * window.innerHeight / 1000}%)`;
   }
-
 
   if (event.progress > firstActOffset) {
     document.getElementById("share-text-text").style.transform = `translateY(${firstActProgress * 300 - 200}%)`;
