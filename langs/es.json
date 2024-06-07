@@ -1,7 +1,5 @@
 {
-    "hero.title_1": "Una",
-    "hero.title_2": "nueva",
-    "hero.title_3": "forma de leer",
+    "hero.title": "Una nueva forma de leer",
     "hero.subtitle": "Gratuita y de código abierto",
     "hero.open_app_button": "Abrir la app",
     "hero.see_source_code_button": "Código fuente",
