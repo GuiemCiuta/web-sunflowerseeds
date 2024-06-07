@@ -55,7 +55,7 @@ featuresScene.on("progress", function (event) {
 
   // En el último acto no habrá scroll
   if (event.progress < secondActOffset) {
-    document.getElementById("features-wrapper").style.transform = `translateY(-${event.progress * 320 * window.innerHeight / 1000}%)`;
+    document.getElementById("features-wrapper").style.transform = `translateY(-${event.progress * 310 * window.innerHeight / 1000}%)`;
   }
 
   if (event.progress > firstActOffset) {

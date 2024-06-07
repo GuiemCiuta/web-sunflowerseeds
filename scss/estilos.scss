@@ -631,6 +631,13 @@ section {
 
 
 @media screen and (max-width: 1000px) {
+  .hero {
+    &__main-pic {
+      width: 65%;
+      margin-top: 2rem;
+    }
+  }
+
   .screens-carousel {
     margin-top: 5rem;
 
@@ -669,7 +676,7 @@ section {
   .share-text-container {
     width: 100%;
     position: relative;
-    overflow: visible;
+    overflow: hidden;
 
     &__computer {
       display: block;
@@ -678,7 +685,7 @@ section {
       width: 100%;
 
       &--2 {
-        margin-top: 12rem;
+        margin-top: 7rem;
         animation: share-text-change-pic 3s infinite;
       }
     }
@@ -729,8 +736,8 @@ section {
     }
   }
 
-  .scrollmagic-pin-spacer {
-    //padding: 0 !important;
+  #section-options + .scrollmagic-pin-spacer {
+    padding: 0 !important;
   }
 }
 
@@ -759,6 +766,7 @@ section {
 
     &__main-pic {
       width: 100%;
+      margin-top: 0;
     }
 
     &__non-imgs-container {
@@ -800,6 +808,13 @@ section {
       margin-bottom: 5rem;
     }
   }
+
+  .section__computer {
+    &--2 {
+      margin-top: 12rem;
+    }
+  }
+
 
   .alternatives-list {
     display: block;

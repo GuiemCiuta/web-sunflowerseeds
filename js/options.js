@@ -10,15 +10,26 @@ function initResaltarLetras() {
     const resaltarLetrasConfusas = document.getElementById("resaltar-letras-switch");
 
     resaltarLetrasConfusas.addEventListener("input", function () {
-        document.querySelectorAll(".letra-b").forEach(function (elem) {
-            console.log(elem.innerHTML);
-            elem.classList.toggle("letra-b--active");
-        });
+        // No usamos classList.toggle porque a veces da problemas
+        if (resaltarLetrasConfusas.checked) {
+            document.querySelectorAll(".letra-b").forEach(function (elem) {
+                elem.classList.add("letra-b--active");
+            });
+        } else {
+            document.querySelectorAll(".letra-b").forEach(function (elem) {
+                elem.classList.remove("letra-b--active");
+            });
+        }
 
-        document.querySelectorAll(".letra-d").forEach(function (elem) {
-            console.log(elem.innerHTML);
-            elem.classList.toggle("letra-d--active");
-        });
+        if (resaltarLetrasConfusas.checked) {
+            document.querySelectorAll(".letra-d").forEach(function (elem) {
+                elem.classList.add("letra-d--active");
+            });
+        } else {
+            document.querySelectorAll(".letra-d").forEach(function (elem) {
+                elem.classList.remove("letra-d--active");
+            });
+        }
     });
 }
 

@@ -7,6 +7,8 @@
   <title>SunflowerSeeds | App gratis para personas con dislexia</title>
   <link rel="stylesheet" href="./css/estilos.css" />
   <link rel="icon" href="./imgs/logo.png" />
+  <meta http-equiv="content-language" content="es">
+
 </head>
 
 <body>
@@ -35,9 +37,9 @@
 
           <div class="hero__buttons-container">
             <a class="button button--main" data-role="hero.open_app_button"
-              href="https://sunflowerseeds.pangea.org/app/"></a>
+              href="https://sunflowerseeds.pangea.org/app/">Abrir la app</a>
             <a class="button button--secondary" href="https://github.com/GuillemBagur/sunflowerseeds"
-              data-role="hero.see_source_code_button"></a>
+              data-role="hero.see_source_code_button">Código fuente</a>
           </div>
         </div>
 
@@ -93,25 +95,28 @@
 
       <div class="options">
         <label class="options__opcion">
-          <span id="label-tamanio" class="options__lbl" data-role="options.change_size"></span>
+          <span id="label-tamanio" class="options__lbl" data-role="options.change_size">Cambiar tamaño</span>
 
           <input id="input-tamanio" type="range" class="options__input" />
         </label>
 
         <label class="options__opcion">
-          <span id="label-interlineado" class="options__lbl" data-role="options.change_line_height"></span>
+          <span id="label-interlineado" class="options__lbl" data-role="options.change_line_height">Cambiar
+            espaciado<br />entre líneas</span>
 
           <input id="input-interlineado" type="range" class="options__input" />
         </label>
 
         <label class="options__opcion">
-          <span id="label-espaciado-palabras" class="options__lbl" data-role="options.change_words_spacing"></span>
+          <span id="label-espaciado-palabras" class="options__lbl" data-role="options.change_words_spacing">Cambiar
+            espaciado entre palabras</span>
 
           <input id="input-espaciado-palabras" value="25" type="range" class="options__input" />
         </label>
 
         <label class="options__opcion">
-          <span id="label-espaciado-letras" class="options__lbl" data-role="options.change_letters_spacing"></span>
+          <span id="label-espaciado-letras" class="options__lbl" data-role="options.change_letters_spacing">Cambiar
+            espaciado entre letras</span>
 
           <input id="input-espaciado-letras" value="10" type="range" class="options__input" />
         </label>
@@ -119,18 +124,22 @@
 
       <section class="highlight-letters">
         <div class="highlight-letters__title">
-          <span class="highlight-letters__lbl" data-role="options.highlight_ambiguous_letters.title"></span>
+          <label>
+            <span class="highlight-letters__lbl" data-role="options.highlight_ambiguous_letters.title">Diferenciar
+              letras</span>
 
-          <label class="switch">
-            <input id="resaltar-letras-switch" class="switch__checkbox" type="checkbox" />
-            <span class="deco"></span>
+            <div class="switch">
+              <input id="resaltar-letras-switch" class="switch__checkbox" type="checkbox" />
+              <span class="deco"></span>
+            </div>
           </label>
         </div>
 
         <div class="highlight-letters__sample-text" data-role="options.highlight_ambiguous_letters.sample"></div>
       </section>
 
-      <a class="button button--main button--center button--wide" data-role="hero.open_app_button" href="https://sunflowerseeds.pangea.org/app/"></a>
+      <a class="button button--main button--center button--wide" data-role="hero.open_app_button"
+        href="https://sunflowerseeds.pangea.org/app/">Abrir la app</a>
     </section>
 
     <section id="section-funcionalidades" class="section section--features section--blanco">
@@ -150,7 +159,7 @@
             <h3 class="feature__title" data-role="features.text_to_speech.title"></h3>
             <button class="feature-trigger" id="text-to-speech-btn">
               <img id="txt-to-speech-img" class="feature-trigger__img feature-trigger__img--white"
-                src="./imgs/icons/audio.svg" />
+                alt="Reproducir/parar audio de ejemplo texto a voz" src="./imgs/icons/audio.svg" />
             </button>
           </div>
           <p class="feature__text" data-role="features.text_to_speech.text"></p>
@@ -160,7 +169,7 @@
           <div class="feature__title-wrapper">
             <h3 class="feature__title" data-role="features.share_text.title"></h3>
             <button class="feature-trigger">
-              <img class="feature-trigger__img" src="./imgs/icons/share.svg" />
+              <img class="feature-trigger__img" alt="Icono compartir texto" src="./imgs/icons/share.svg" />
             </button>
           </div>
 
