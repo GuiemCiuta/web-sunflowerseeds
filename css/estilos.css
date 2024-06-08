@@ -33,7 +33,25 @@ section {
 }
 
 .container {
-  background-image: linear-gradient(#a301d0, #5401d0);
+  background-color: #a301d0;
+}
+.container--purple {
+  background-color: #5401d0;
+}
+
+.main {
+  color: white;
+  padding: 2rem;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+.main__title {
+  font-size: 2.5rem;
+  font-weight: 200;
+  line-height: 2.7rem;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
 .hero {
@@ -67,10 +85,6 @@ section {
   font-size: 2.5rem;
   font-weight: 200;
   line-height: 2.7rem;
-  margin: 0;
-  padding: 0;
-}
-.hero__title * {
   margin: 0;
   padding: 0;
 }
@@ -144,6 +158,10 @@ section {
 
 .sunflowerseeds-fog {
   height: 80%;
+}
+
+.link-mismo-color {
+  color: inherit;
 }
 
 .button {

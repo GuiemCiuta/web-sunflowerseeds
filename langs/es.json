@@ -27,5 +27,8 @@
     "features.ocr.title": "Escaneo de imágenes a texto con IA",
 
     "alternatives.title": "¿No te hemos convencido?",
-    "alternatives.text": "Nos sabe mal. Pero no queremos que te vayas con las manos vacías.<br/><br/>Aquí te dejamos un listado de aplicaciones similares que quizás te interesen."
-} 
+    "alternatives.text": "Nos sabe mal. Pero no queremos que te vayas con las manos vacías.<br/><br/>Aquí te dejamos un listado de aplicaciones similares que quizás te interesen.",
+
+    "about.title": "Sobre el proyecto",
+    "about.text": "SunflowerSeeds nació en Menorca en 2021, a raíz de un trabajo de instituto sobre hacer un listado de apps para personas con dislexia. Pero, después de completar el trabajo, me di cuenta que muchas apps tenían el mismo problema: tenían una versión gratuita muy básica y una versión completa de pago. Así que decidí ir un paso más allá: reunir las mejores características de cada app y crear mi propio software... y hacerlo de código abierto. Para ello, contacté con <a class='link-mismo-color' href='https://pangea.org'>Pangea, el Internet ético</a> y desde entonces me apoyan con el hosting de la web (¡muchas gracias!). Tres años después, cuando estoy escribiendo ésto, ya no queda ni una línea del (horroroso) código que escribí cuando solo tenía 16 años, pero éso fue un buen punto de partida. Lo reescribí todo un año más tarde, y la app ahora va mejor. Ahora voy haciendo mejoras sobre esa base. La app actual sigue sin ser mejor que las alternativas de pago que encontrarás por ahí; pero si no quieres pagar se convierte en una opción a tener muy en cuenta.<br /><br />Esta landing page ha sido creada en 2024 para un trabajo del grado de DAM, para la asignatura de Marcas. Quise aprovechar para darle un cambio de aires a la web antigua y <i>matar dos pájaros de un tiro</i>.<br /><br />Un saludo!<br /><br />Guiem."
+}
