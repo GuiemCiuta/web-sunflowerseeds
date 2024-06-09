@@ -1,4 +1,8 @@
 {
+    "nav.home": "Inicio",
+    "nav.about": "Sobre el proyecto",
+    "nav.contacto": "Contacto",
+
     "hero.title": "Una nueva forma de leer",
     "hero.subtitle": "Gratuita y de código abierto",
     "hero.open_app_button": "Abrir la app",

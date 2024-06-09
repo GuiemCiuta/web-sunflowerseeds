@@ -1,296 +1,549 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>SunflowerSeeds | App gratis para personas con dislexia</title>
+    <meta
+      name="description"
+      content="SunflowerSeeds es una aplicación web open source pensada para personas con dislexia. Puedes usarla sin descargarte nada. 100% Libre."
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="icon" href="./imgs/logo.png" />
+    <meta http-equiv="content-language" content="es" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-  <title>SunflowerSeeds | App gratis para personas con dislexia</title>
-  <meta name="description"
-    content="SunflowerSeeds es una aplicación web open source pensada para personas con dislexia. Puedes usarla sin descargarte nada. 100% Libre." />
-  <link rel="stylesheet" href="./css/estilos.css" />
-  <link rel="icon" href="./imgs/logo.png" />
-  <meta http-equiv="content-language" content="es">
-</head>
-
-<body>
-  <div class="container">
-    <section class="hero">
-      <header class="hero__header">
-        <div>
-          <div class="hero__logo-wrapper">
-            <img src="./imgs/logo_108x108.png" alt="SunflowerSeeds" class="hero__logo" />
-          </div>
-        </div>
-
-        <div class="hero__titles-wrapper">
-          <h1 class="hero__title" data-role="hero.title">Una nueva forma de leer</h1>
-          <h2 class="hero__subtitle" data-role="hero.subtitle"></h2>
-        </div>
-      </header>
-
-      <main class="hero__main-content">
-        <div class="hero__non-imgs-container">
-          <div class="sunflowerseeds-fog" data-role="sunflowerseeds-fog"></div>
-
-          <div class="hero__buttons-container">
-            <a class="button button--main" data-role="hero.open_app_button"
-              href="https://sunflowerseeds.pangea.org/app/">Abrir la app</a>
-            <a class="button button--secondary" href="https://github.com/GuillemBagur/sunflowerseeds"
-              data-role="hero.see_source_code_button">Código fuente</a>
-          </div>
-        </div>
-
-        <picture class="hero__main-pic">
-          <source type="image/webp" srcset="./imgs/mockup-portatil.webp" />
-          <source srcset="./imgs/mockup-portatil.png" />
-          <img src="./imgs/mockup-portatil.png" alt="Vista previa de la app SunflowerSeeds" style="width: 100%;" />
-        </picture>
-      </main>
-
-      <div class="hero__sunflowers-row">
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-        <img src="./imgs/sunflower_250x250.png" alt="Imagen decorativa de un girasol" class="hero__sunflower" />
-      </div>
-    </section>
-
-    <section id="section-pantalla" class="section section--intro section--blanco">
-      <h2 class="section__title section--blanco__title">
-        <span data-role="intro.title_1"></span>
-        <span class="word-change" data-role="intro.title_2"></span>
-        <span data-role="intro.title_3"></span>
-      </h2>
-
-      <div class="screens-carousel" id="screens-carousel">
-        <picture>
-          <source type="image/webp" srcset="./imgs/mockup-portatil.webp" />
-          <source srcset="./imgs/mockup-portatil.png" />
-          <img src="./imgs/mockup-portatil.png" alt="Vista previa de la app SunflowerSeeds"
-            class="screens-carousel__pic" />
-        </picture>
-        <picture>
-          <source type="image/webp" srcset="./imgs/mockup-tablet.webp" />
-          <source srcset="./imgs/mockup-tablet.png" />
-          <img src="./imgs/mockup-tablet.png" alt="Vista previa de la app SunflowerSeeds"
-            class="screens-carousel__pic" />
-        </picture>
-        <picture>
-          <source type="image/webp" srcset="./imgs/mockup-movil.webp" />
-          <source srcset="./imgs/mockup-movil.png" />
-          <img src="./imgs/mockup-movil.png" alt="Vista previa de la app SunflowerSeeds"
-            class="screens-carousel__pic" />
-        </picture>
-      </div>
-    </section>
-
-    <section id="section-options" class="section section--options">
-      <h2 class="section__title">
-        <span data-role="options.title"></span>
-      </h2>
-
-      <div class="options">
-        <div class="options__opcion">
-          <label id="label-tamanio" class="options__lbl" data-role="options.change_size">
-            Cambiar tamaño
-          </label>
-          <input id="input-tamanio" type="range" class="options__input" />
-        </div>
-
-        <div class="options__opcion">
-          <label id="label-interlineado" class="options__lbl" data-role="options.change_line_height">
-            Cambiar espaciado entre líneas
-          </label>
-          <input id="input-interlineado" type="range" class="options__input" />
-        </div>
-
-        <div class="options__opcion">
-
-          <label id="label-espaciado-palabras" class="options__lbl" data-role="options.change_words_spacing">
-            Cambiar espaciado entre palabras
-          </label>
-          <input id="input-espaciado-palabras" value="25" type="range" class="options__input" />
-        </div>
-
-        <div class="options__opcion">
-          <label id="label-espaciado-letras" class="options__lbl" data-role="options.change_letters_spacing">
-            Cambiar espaciado entre letras
-          </label>
-          <input id="input-espaciado-letras" value="10" type="range" class="options__input" />
-        </div>
-      </div>
-
-      <section class="highlight-letters">
-        <div class="highlight-letters__title">
-          <label>
-            <span class="highlight-letters__lbl" data-role="options.highlight_ambiguous_letters.title">Diferenciar
-              letras</span>
-
-            <div class="switch">
-              <input id="resaltar-letras-switch" class="switch__checkbox" type="checkbox" />
-              <span class="deco"></span>
-            </div>
-          </label>
-        </div>
-
-        <div class="highlight-letters__sample-text" data-role="options.highlight_ambiguous_letters.sample"></div>
-      </section>
-
-      <a class="button button--main button--center button--wide" data-role="hero.open_app_button"
-        href="https://sunflowerseeds.pangea.org/app/">Abrir la app</a>
-    </section>
-
-    <section id="section-funcionalidades" class="section section--features section--blanco">
-      <div class="features-explanation-wrapper">
-        <h2 class="section__title section--blanco__title">
-          <span data-role="features.title"></span>
-        </h2>
-
-        <p class="paragraph" data-role="features.text"></p>
-
-        <img src="./imgs/deco-pic-features.svg" alt="" class="features-deco-img">
-      </div>
-
-      <div id="features-wrapper" class="features-wrapper">
-        <section class="feature">
-          <div class="feature__title-wrapper">
-            <h3 class="feature__title" data-role="features.text_to_speech.title"></h3>
-            <button class="feature-trigger" id="text-to-speech-btn">
-              <img id="txt-to-speech-img" class="feature-trigger__img feature-trigger__img--white"
-                alt="Reproducir/parar audio de ejemplo texto a voz" src="./imgs/icons/audio.svg" />
-            </button>
-          </div>
-          <p class="feature__text" data-role="features.text_to_speech.text"></p>
-        </section>
-
-        <section id="share-text" class="feature">
-          <div class="feature__title-wrapper">
-            <h3 class="feature__title" data-role="features.share_text.title"></h3>
-            <button class="feature-trigger">
-              <img class="feature-trigger__img" alt="Icono compartir texto" src="./imgs/icons/share.svg" />
-            </button>
-          </div>
-
-          <div class="share-text-container">
-            <picture>
-              <source type="image/webp" srcset="./imgs/mockup-portatil.webp" />
-              <source srcset="./imgs/mockup-portatil.png" />
-              <img src="./imgs/mockup-portatil.png" alt="Portátil con texto" class="share-text-container__computer" />
-            </picture>
-            <span id="share-text-text" class="share-text-container__text" data-role="features.share_text.text"></span>
-            <img id="portatil-vacio" src="./imgs/mockup-portatil-vacio.png" alt="Portátil sin texto"
-              class="share-text-container__computer share-text-container__computer--2" />
-          </div>
-        </section>
-
-        <section class="feature">
-          <div class="feature__title-wrapper">
-            <h3 class="feature__title" data-role="features.ocr.title"></h3>
-          </div>
-
-          <div class="ocr-container">
-            <picture>
-              <source type="image/webp" srcset="./imgs/contraportada-pensar-r-d.webp" />
-              <source srcset="./imgs/contraportada-pensar-r-d.png" />
-              <img src="./imgs/contraportada-pensar-r-d.png" alt="Contra portada del libro, para hacer un ejemplo"
-                class="ocr-container__whole-pic" id="ocr-whole-pic" />
-            </picture>
-            <picture>
-              <source type="image/webp" srcset="./imgs/contraportada-pensar-r-d.webp" />
-              <source srcset="./imgs/contraportada-pensar-r-d.png" />
-              <img src="./imgs/contraportada-pensar-r-d.png" alt="Contra portada del libro, para hacer un ejemplo"
-                class="ocr-container__cropped-pic" id="ocr-cropped-pic" />
-            </picture>
-
-            <div class="ocr-container__mobile-effect"></div>
-
-            <p class="ocr-container__scanned-text">
-              En Pensar rápido, pensar despacio, Kahneman nos ofrece una revolucionaria perspectiva del cerebro y
-              explica
-              los dos sistemas que modelan cómo pensamos: uno rápido, intuitivo y emocional; el otro, lento,
-              deliberativo
-              y lógico...
-            </p>
-          </div>
-        </section>
-      </div>
-    </section>
-
-    <section class="section section--
-  
-  alternatives">
-      <h2 class="section__title">
-        <span data-role="alternatives.title"></span>
-      </h2>
-
-      <p class="paragraph paragraph--white paragraph--half-width" data-role="alternatives.text"></p>
-
-      <ul class="alternatives-list">
-        <li class="alternatives-list__li">
-          <picture>
-            <source type="image/webp" srcset="./imgs/lecto-logo.webp" />
-            <source srcset="./imgs/lecto-logo.jpeg" />
-            <img src="./imgs/lecto-logo.jpeg" alt="Lecto app" class="alternatives-list__img" />
-          </picture>
-          <a href="https://lecto.app" target="_blank" class="alternatives-list__link">
-            Lecto
-          </a>
+  <body>
+    <nav id="nav" class="nav">
+      <ul class="nav__links">
+        <li class="nav__li">
+          <a href="./index.html" class="nav__link" data-role="nav.home"
+            >Inicio</a
+          >
         </li>
-
-        <li class="alternatives-list__li">
-          <picture>
-            <source type="image/webp" srcset="./imgs/helperbird-logo.webp" />
-            <source srcset="./imgs/helperbird-logo.png" />
-            <img src="./imgs/helperbird-logo.png" alt="Helper Bird app" class="alternatives-list__img" />
-          </picture>
-          <a href="https://www.helperbird.com/" target="_blank" class="alternatives-list__link">
-            Helperbird
-          </a>
+        <li class="nav__li">
+          <a
+            href="./sobre-el-proyecto.html"
+            class="nav__link"
+            data-role="nav.about"
+            >Sobre el proyecto</a
+          >
         </li>
-
-        <li class="alternatives-list__li">
-          <picture>
-            <source type="image/webp" srcset="./imgs/voicedream-logo.webp" />
-            <source srcset="./imgs/voicedream-logo.jpg" />
-            <img src="./imgs/voicedream-logo.jpg" alt="Voice Dream app" class="alternatives-list__img" />
-          </picture>
-          <a href="https://www.voicedream.com/" target="_blank" class="alternatives-list__link">
-            Voice Dream
-          </a>
+        <li class="nav__li">
+          <a href="./contacto.html" class="nav__link" data-role="nav.contact"
+            >Contacto</a
+          >
         </li>
       </ul>
-    </section>
-  </div>
+    </nav>
 
-  <footer class="footer">
-    <p class="footer__credits">Guiem Bagur</p>
-    <p class="footer__copyright">© 2021-2024</p>
-    <a href="https://guiem.dev" target="_blank" class="footer__website">guiem.dev</a>
-  </footer>
+    <div class="container">
+      <section class="hero">
+        <header class="hero__header">
+          <div>
+            <div class="hero__logo-wrapper">
+              <img
+                src="./imgs/logo_108x108.png"
+                alt="SunflowerSeeds"
+                class="hero__logo"
+              />
+            </div>
+          </div>
 
-  <script src="./js/global-vars.js"></script>
-  <script src="./js/scrollmagic.js"></script>
-  <script src="./js/scrollmagic-indicadors.js"></script>
-  <script src="./js/load-lang.js"></script>
-  <script src="./js/scroll.js"></script>
-  <script src="./js/options.js"></script>
-  <script src="./js/speech.js"></script>
-  <script src="./js/animations.js"></script>
-</body>
+          <div class="hero__titles-wrapper">
+            <h1 class="hero__title" data-role="hero.title">
+              Una nueva forma de leer
+            </h1>
+            <h2 class="hero__subtitle" data-role="hero.subtitle"></h2>
+          </div>
+        </header>
 
-</htmlu
+        <main class="hero__main-content">
+          <div class="hero__non-imgs-container">
+            <div
+              class="sunflowerseeds-fog"
+              data-role="sunflowerseeds-fog"
+            ></div>
+
+            <div class="hero__buttons-container">
+              <a
+                class="button button--main"
+                data-role="hero.open_app_button"
+                href="https://sunflowerseeds.pangea.org/app/"
+                >Abrir la app</a
+              >
+              <a
+                class="button button--secondary"
+                href="https://github.com/GuillemBagur/sunflowerseeds"
+                data-role="hero.see_source_code_button"
+                >Código fuente</a
+              >
+            </div>
+          </div>
+
+          <picture class="hero__main-pic">
+            <source type="image/webp" srcset="./imgs/mockup-portatil.webp" />
+            <source srcset="./imgs/mockup-portatil.png" />
+            <img
+              src="./imgs/mockup-portatil.png"
+              alt="Vista previa de la app SunflowerSeeds"
+              style="width: 100%"
+            />
+          </picture>
+        </main>
+
+        <div class="hero__sunflowers-row">
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+          <img
+            src="./imgs/sunflower_250x250.png"
+            alt="Imagen decorativa de un girasol"
+            class="hero__sunflower"
+          />
+        </div>
+      </section>
+
+      <section
+        id="section-pantalla"
+        class="section section--intro section--blanco"
+      >
+        <h2 class="section__title section--blanco__title">
+          <span data-role="intro.title_1"></span>
+          <span class="word-change" data-role="intro.title_2"></span>
+          <span data-role="intro.title_3"></span>
+        </h2>
+
+        <div class="screens-carousel" id="screens-carousel">
+          <picture>
+            <source type="image/webp" srcset="./imgs/mockup-portatil.webp" />
+            <source srcset="./imgs/mockup-portatil.png" />
+            <img
+              src="./imgs/mockup-portatil.png"
+              alt="Vista previa de la app SunflowerSeeds"
+              class="screens-carousel__pic"
+            />
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="./imgs/mockup-tablet.webp" />
+            <source srcset="./imgs/mockup-tablet.png" />
+            <img
+              src="./imgs/mockup-tablet.png"
+              alt="Vista previa de la app SunflowerSeeds"
+              class="screens-carousel__pic"
+            />
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="./imgs/mockup-movil.webp" />
+            <source srcset="./imgs/mockup-movil.png" />
+            <img
+              src="./imgs/mockup-movil.png"
+              alt="Vista previa de la app SunflowerSeeds"
+              class="screens-carousel__pic"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <section id="section-options" class="section section--options">
+        <h2 class="section__title">
+          <span data-role="options.title"></span>
+        </h2>
+
+        <div class="options">
+          <div class="options__opcion">
+            <label
+              id="label-tamanio"
+              class="options__lbl"
+              data-role="options.change_size"
+            >
+              Cambiar tamaño
+            </label>
+            <input id="input-tamanio" type="range" class="options__input" />
+          </div>
+
+          <div class="options__opcion">
+            <label
+              id="label-interlineado"
+              class="options__lbl"
+              data-role="options.change_line_height"
+            >
+              Cambiar espaciado entre líneas
+            </label>
+            <input
+              id="input-interlineado"
+              type="range"
+              class="options__input"
+            />
+          </div>
+
+          <div class="options__opcion">
+            <label
+              id="label-espaciado-palabras"
+              class="options__lbl"
+              data-role="options.change_words_spacing"
+            >
+              Cambiar espaciado entre palabras
+            </label>
+            <input
+              id="input-espaciado-palabras"
+              value="25"
+              type="range"
+              class="options__input"
+            />
+          </div>
+
+          <div class="options__opcion">
+            <label
+              id="label-espaciado-letras"
+              class="options__lbl"
+              data-role="options.change_letters_spacing"
+            >
+              Cambiar espaciado entre letras
+            </label>
+            <input
+              id="input-espaciado-letras"
+              value="10"
+              type="range"
+              class="options__input"
+            />
+          </div>
+        </div>
+
+        <section class="highlight-letters">
+          <div class="highlight-letters__title">
+            <label>
+              <span
+                class="highlight-letters__lbl"
+                data-role="options.highlight_ambiguous_letters.title"
+                >Diferenciar letras</span
+              >
+
+              <div class="switch">
+                <input
+                  id="resaltar-letras-switch"
+                  class="switch__checkbox"
+                  type="checkbox"
+                />
+                <span class="deco"></span>
+              </div>
+            </label>
+          </div>
+
+          <div
+            class="highlight-letters__sample-text"
+            data-role="options.highlight_ambiguous_letters.sample"
+          ></div>
+        </section>
+
+        <a
+          class="button button--main button--center button--wide"
+          data-role="hero.open_app_button"
+          href="https://sunflowerseeds.pangea.org/app/"
+          >Abrir la app</a
+        >
+      </section>
+
+      <section
+        id="section-funcionalidades"
+        class="section section--features section--blanco"
+      >
+        <div class="features-explanation-wrapper">
+          <h2 class="section__title section--blanco__title">
+            <span data-role="features.title"></span>
+          </h2>
+
+          <p class="paragraph" data-role="features.text"></p>
+
+          <img
+            src="./imgs/deco-pic-features.svg"
+            alt=""
+            class="features-deco-img"
+          />
+        </div>
+
+        <div id="features-wrapper" class="features-wrapper">
+          <section class="feature">
+            <div class="feature__title-wrapper">
+              <h3
+                class="feature__title"
+                data-role="features.text_to_speech.title"
+              ></h3>
+              <button class="feature-trigger" id="text-to-speech-btn">
+                <img
+                  id="txt-to-speech-img"
+                  class="feature-trigger__img feature-trigger__img--white"
+                  alt="Reproducir/parar audio de ejemplo texto a voz"
+                  src="./imgs/icons/audio.svg"
+                />
+              </button>
+            </div>
+            <p
+              class="feature__text"
+              data-role="features.text_to_speech.text"
+            ></p>
+          </section>
+
+          <section id="share-text" class="feature">
+            <div class="feature__title-wrapper">
+              <h3
+                class="feature__title"
+                data-role="features.share_text.title"
+              ></h3>
+              <button class="feature-trigger">
+                <img
+                  class="feature-trigger__img"
+                  alt="Icono compartir texto"
+                  src="./imgs/icons/share.svg"
+                />
+              </button>
+            </div>
+
+            <div class="share-text-container">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="./imgs/mockup-portatil.webp"
+                />
+                <source srcset="./imgs/mockup-portatil.png" />
+                <img
+                  src="./imgs/mockup-portatil.png"
+                  alt="Portátil con texto"
+                  class="share-text-container__computer"
+                />
+              </picture>
+              <span
+                id="share-text-text"
+                class="share-text-container__text"
+                data-role="features.share_text.text"
+              ></span>
+              <img
+                id="portatil-vacio"
+                src="./imgs/mockup-portatil-vacio.png"
+                alt="Portátil sin texto"
+                class="share-text-container__computer share-text-container__computer--2"
+              />
+            </div>
+          </section>
+
+          <section class="feature">
+            <div class="feature__title-wrapper">
+              <h3 class="feature__title" data-role="features.ocr.title"></h3>
+            </div>
+
+            <div class="ocr-container">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="./imgs/contraportada-pensar-r-d.webp"
+                />
+                <source srcset="./imgs/contraportada-pensar-r-d.png" />
+                <img
+                  src="./imgs/contraportada-pensar-r-d.png"
+                  alt="Contra portada del libro, para hacer un ejemplo"
+                  class="ocr-container__whole-pic"
+                  id="ocr-whole-pic"
+                />
+              </picture>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="./imgs/contraportada-pensar-r-d.webp"
+                />
+                <source srcset="./imgs/contraportada-pensar-r-d.png" />
+                <img
+                  src="./imgs/contraportada-pensar-r-d.png"
+                  alt="Contra portada del libro, para hacer un ejemplo"
+                  class="ocr-container__cropped-pic"
+                  id="ocr-cropped-pic"
+                />
+              </picture>
+
+              <div class="ocr-container__mobile-effect"></div>
+
+              <p class="ocr-container__scanned-text">
+                En Pensar rápido, pensar despacio, Kahneman nos ofrece una
+                revolucionaria perspectiva del cerebro y explica los dos
+                sistemas que modelan cómo pensamos: uno rápido, intuitivo y
+                emocional; el otro, lento, deliberativo y lógico...
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="section section-- alternatives">
+        <h2 class="section__title">
+          <span data-role="alternatives.title"></span>
+        </h2>
+
+        <p
+          class="paragraph paragraph--white paragraph--half-width"
+          data-role="alternatives.text"
+        ></p>
+
+        <ul class="alternatives-list">
+          <li class="alternatives-list__li">
+            <picture>
+              <source type="image/webp" srcset="./imgs/lecto-logo.webp" />
+              <source srcset="./imgs/lecto-logo.jpeg" />
+              <img
+                src="./imgs/lecto-logo.jpeg"
+                alt="Lecto app"
+                class="alternatives-list__img"
+              />
+            </picture>
+            <a
+              href="https://lecto.app"
+              target="_blank"
+              class="alternatives-list__link"
+            >
+              Lecto
+            </a>
+          </li>
+
+          <li class="alternatives-list__li">
+            <picture>
+              <source type="image/webp" srcset="./imgs/helperbird-logo.webp" />
+              <source srcset="./imgs/helperbird-logo.png" />
+              <img
+                src="./imgs/helperbird-logo.png"
+                alt="Helper Bird app"
+                class="alternatives-list__img"
+              />
+            </picture>
+            <a
+              href="https://www.helperbird.com/"
+              target="_blank"
+              class="alternatives-list__link"
+            >
+              Helperbird
+            </a>
+          </li>
+
+          <li class="alternatives-list__li">
+            <picture>
+              <source type="image/webp" srcset="./imgs/voicedream-logo.webp" />
+              <source srcset="./imgs/voicedream-logo.jpg" />
+              <img
+                src="./imgs/voicedream-logo.jpg"
+                alt="Voice Dream app"
+                class="alternatives-list__img"
+              />
+            </picture>
+            <a
+              href="https://www.voicedream.com/"
+              target="_blank"
+              class="alternatives-list__link"
+            >
+              Voice Dream
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p class="footer__credits">Guiem Bagur</p>
+      <p class="footer__copyright">© 2021-2024</p>
+      <a href="https://guiem.dev" target="_blank" class="footer__website"
+        >guiem.dev</a
+      >
+    </footer>
+
+    <script src="./js/global-vars.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/scrollmagic.js"></script>
+    <script src="./js/scrollmagic-indicadors.js"></script>
+    <script src="./js/load-lang.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/options.js"></script>
+    <script src="./js/speech.js"></script>
+    <script src="./js/animations.js"></script>
+  </body>
+</html>

@@ -23,6 +23,36 @@ section {
   box-sizing: border-box;
 }
 
+.nav {
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 3rem;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  display: flex;
+  justify-content: right;
+  z-index: 5;
+  transition: all .5s;
+
+  &__links {
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+
+  &--add-contrast {
+    background-color: rgba(0, 0, 0, .6);
+    transition: all .5s;
+  }
+}
+
 .container {
   //background-image: linear-gradient($pink, $purple);
   background-color: $pink;
@@ -52,17 +82,26 @@ section {
   color: white;
 
   &__paragraph {
-    width: 40%;
-    float: left;
+    width: 48%;
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
   }
 
-  &__img {
+  &__picture {
+    float: right;
     display: flex;
     align-items: center;
     width: 50%;
     height: 40rem;
     overflow: hidden;
     border-radius: 12px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -74,11 +113,11 @@ section {
   position: relative;
 
   &__header {
+    margin-top: 3.5rem;
     display: flex;
     align-items: left;
     gap: 1rem;
   }
-
 
   &__logo-wrapper {
     background-color: white;
@@ -89,7 +128,7 @@ section {
   }
 
   &__logo {
-    height: 100%
+    height: 100%;
   }
 
   &__titles-wrapper {
@@ -110,7 +149,7 @@ section {
     font-weight: 100;
     opacity: 0.8;
     margin: 0;
-    margin-top: .2rem;
+    margin-top: 0.2rem;
   }
 
   &__main-content {
@@ -419,7 +458,7 @@ section {
   border-radius: 50%;
 }
 
-.switch__checkbox:checked+.deco:before {
+.switch__checkbox:checked + .deco:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -522,7 +561,6 @@ section {
   overflow: hidden;
 }
 
-
 .features-wrapper {
   transform: translateY(5%);
 }
@@ -545,7 +583,7 @@ section {
   &__text {
     margin-top: 0;
     font-size: 1.2rem;
-    opacity: .8;
+    opacity: 0.8;
     line-height: 1.7rem;
   }
 }
@@ -557,7 +595,7 @@ section {
   width: 3.5rem;
   padding: 0.5rem;
   background-color: $pink;
-  transition: all .1s;
+  transition: all 0.1s;
 
   &__img {
     display: block;
@@ -570,12 +608,12 @@ section {
 
   &:hover {
     transform: scale(1.03);
-    transition: all .1s;
+    transition: all 0.1s;
   }
 
   &:active {
-    transform: scale(.97);
-    transition: all .1s;
+    transform: scale(0.97);
+    transition: all 0.1s;
   }
 }
 
@@ -591,7 +629,7 @@ section {
   &__text {
     display: block;
     font-size: 1.2rem;
-    opacity: .9;
+    opacity: 0.9;
     width: 70%;
     margin: 4rem auto;
     transform: translateY(-200%);
@@ -601,7 +639,6 @@ section {
 .ocr-container {
   position: relative;
   height: 40rem;
-
 
   &__whole-pic,
   &__cropped-pic {
@@ -613,7 +650,6 @@ section {
   }
 
   &__cropped-pic {
-
     clip-path: polygon(25% 20%, 82% 20%, 82% 70%, 25% 70%);
     z-index: 2;
   }
@@ -646,7 +682,7 @@ section {
     display: block;
     font-size: 2rem;
     font-weight: 100;
-    opacity: .7;
+    opacity: 0.7;
     margin: 0;
   }
 
@@ -654,7 +690,7 @@ section {
     display: block;
     margin: 0;
     font-weight: 200;
-    opacity: .5;
+    opacity: 0.5;
     font-size: 1.2rem;
   }
 
@@ -664,16 +700,31 @@ section {
     text-decoration: none;
     margin-top: 3rem;
     font-size: 1.5rem;
-    opacity: .4;
+    opacity: 0.4;
   }
 }
-
 
 @media screen and (max-width: 1000px) {
   .hero {
     &__main-pic {
       width: 65%;
       margin-top: 2rem;
+    }
+  }
+
+  .blog-layout {
+    &__paragraph {
+      width: 100%;
+      text-align: justify;
+      font-size: 1.1rem;
+      line-height: 1.7rem;
+    }
+
+    &__picture {
+      margin-top: 2rem;
+      float: none;
+      width: 100%;
+      height: 12rem;
     }
   }
 
@@ -775,7 +826,7 @@ section {
     }
   }
 
-  #section-options+.scrollmagic-pin-spacer {
+  #section-options + .scrollmagic-pin-spacer {
     padding: 0 !important;
   }
 }
@@ -853,7 +904,6 @@ section {
       margin-top: 12rem;
     }
   }
-
 
   .alternatives-list {
     display: block;
