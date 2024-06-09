@@ -46,8 +46,24 @@ section {
     padding: 0;
     color: white;
   }
+}
 
+.blog-layout {
+  color: white;
 
+  &__paragraph {
+    width: 40%;
+    float: left;
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 40rem;
+    overflow: hidden;
+    border-radius: 12px;
+  }
 }
 
 .hero {
