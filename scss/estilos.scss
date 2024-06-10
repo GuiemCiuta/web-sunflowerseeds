@@ -1,6 +1,8 @@
 @import "./global-vars.scss";
 @import "./fonts.scss";
 
+$bigScreenHeightBreakpoint: 1000px;
+
 html,
 body {
   margin: 0;
@@ -931,7 +933,7 @@ $envelopeSend: 3s;
 }
 
 
-@media screen and (max-width: 1000px), screen and (min-height: 1100px) {
+@media screen and (max-width: 1000px), screen and (min-height: $bigScreenHeightBreakpoint) {
   .hero {
     &__main-pic {
       width: 65%;
@@ -1058,7 +1060,7 @@ $envelopeSend: 3s;
   }
 }
 
-@media screen and (min-height: 1100px) {
+@media screen and (min-height: $bigScreenHeightBreakpoint) {
   .share-text-container {
     width: 40%;
   }
