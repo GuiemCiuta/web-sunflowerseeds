@@ -36,7 +36,11 @@
     "about.title": "Sobre el proyecto",
     "about.text": "SunflowerSeeds nació en Menorca en 2021, a raíz de un trabajo de instituto sobre hacer un listado de apps para personas con dislexia. Pero, después de completar el trabajo, me di cuenta que muchas apps tenían el mismo problema: tenían una versión gratuita muy básica y una versión completa de pago. Así que decidí ir un paso más allá: reunir las mejores características de cada app y crear mi propio software... y hacerlo de código abierto. Para ello, contacté con <a class='link-mismo-color' href='https://pangea.org'>Pangea, el Internet ético</a> y desde entonces me apoyan con el hosting de la web (¡muchas gracias!). Tres años después, cuando estoy escribiendo ésto, ya no queda ni una línea del (horroroso) código que escribí cuando solo tenía 16 años, pero éso fue un buen punto de partida. Lo reescribí todo un año más tarde, y la app ahora va mejor. Ahora voy haciendo mejoras sobre esa base. La app actual sigue sin ser mejor que las alternativas de pago que encontrarás por ahí; pero si no quieres pagar se convierte en una opción a tener muy en cuenta.<br /><br />Esta landing page ha sido creada en 2024 para un trabajo del grado de DAM, para la asignatura de Marcas. Quise aprovechar para darle un cambio de aires a la web antigua y <em>matar dos pájaros de un tiro</em>.<br /><br />Un saludo!<br /><br />Guiem.",
 
-    "contact.title": "Contacto",
+    "contact.title": "Contacto (puedes probar el formulario, pero no se enviará nada)",
     "contact.privacy_politics": "Acepto la política de privacidad",
-    "contact.send": "Enviar"
+    "contact.send": "Enviar",
+    "contact.feedback.title": "¡NO SE HA ENVIADO!",
+    "contact.feedback.text": "Tu mensaje NO SE HA ENVIADO. Porque actualmente este formulario es de adorno. Si quieres contactarme, aquí tienes mi email: <a class='link-mismo-color' href='mailto:guillembagurmoll@gmail.com'>guillembagurmoll@gmail.com</a>. ¡Gracias!",
+    "contact.error.accept_privacy": "Por favor, lee y acepta las políticas de privacidad.",
+    "contact.error.fillup_all_fields": "Por favor, rellena todos los campos"
 }

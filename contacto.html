@@ -21,73 +21,74 @@
       <h1 class="main__title" data-role="contact.title">Contacto</h1>
 
 
-        <form id="contact-form" class="contact-form" data-animation="send">
-          <div class="contact-form__inputs-wrapper">
-            <input id="name" class="contact-form__input" type="text" name="name" placeholder="Nombre" />
-            <input id="email" class="contact-form__input" type="email" name="email" placeholder="Email" />
-          </div>
+      <form id="contact-form" class="contact-form" data-animation="send">
+        <div class="contact-form__inputs-wrapper">
+          <input id="name" class="contact-form__input" type="text" name="name" placeholder="Nombre" />
+          <input id="email" class="contact-form__input" type="email" name="email" placeholder="Email" />
+        </div>
 
-          <textarea id="message" class="contact-form__input contact-form__input--textarea" name="message"
-            placeholder="Mensaje"></textarea>
-          <label><input id="privacy-politics-signature" type="checkbox" required><span
-              class="contact-form__privacy-politics-signature" data-role="contact.privacy_politics">Acepto la política
-              de
-              privacidad</span></label><br />
-          <button type="button" data-role="contact.send" id="send-btn" class="button button--main">
-            Enviar
-          </button>
-        </form>
+        <textarea id="message" class="contact-form__input contact-form__input--textarea" name="message"
+          placeholder="Mensaje"></textarea>
+        <label><input id="privacy-politics-signature" type="checkbox" required><span
+            class="contact-form__privacy-politics-signature" data-role="contact.privacy_politics">Acepto la política
+            de
+            privacidad</span></label><br />
+        <button type="button" data-role="contact.send" id="send-btn" class="button button--main">
+          Enviar
+        </button>
+      </form>
 
-        <section id="sent" class="form-sent-feedback" data-animation="send">
-          <div class="contact-envelope" data-animation="send">
-            <div class="contact-envelope__flap" data-animation="send"></div>
-            <div class="contact-envelope__pattern-wrapper">
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-              <div class="contact-envelope__pattern"></div>
-            </div>
-            <div class="contact-envelope__body">
-              <span class="contact-envelope__recipient-info">
-                <b>Destinatario:</b> <br />
-                Guiem Bagur <br />
-                Ciutadella de Menorca, Islas Baleares<br />
-                España <br />
-              </span>
-            </div>
+      <section id="sent" class="form-sent-feedback" data-animation="send">
+        <div class="contact-envelope" data-animation="send">
+          <div class="contact-envelope__flap" data-animation="send"></div>
+          <div class="contact-envelope__pattern-wrapper">
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
+            <div class="contact-envelope__pattern"></div>
           </div>
+          <div class="contact-envelope__body">
+            <span class="contact-envelope__recipient-info">
+              <b>Destinatario:</b> <br />
+              Guiem Bagur <br />
+              Ciutadella de Menorca, Islas Baleares<br />
+              España <br />
+            </span>
+          </div>
+        </div>
 
-          <div>
-            <h2 data-role="sent">¡Enviado!</h2>
-            <p data-role="feedback">
-              Tu mensaje ha sido enviado con éxito. Te responderé lo más
-              rápido posible. ¡Gracias!
-            </p>
-          </div>
-        </section>
+        <div>
+          <h2 data-role="contact.feedback.title">¡NO SE HA ENVIADO!</h2>
+          <p data-role="contact.feedback.text">
+            Tu mensaje NO SE HA ENVIADO. Porque actualmente este formulario es de adorno. Si quieres contactarme, aquí
+            tienes mi email: <a class='link-mismo-color'
+              href='mailto:guillembagurmoll@gmail.com'>guillembagurmoll@gmail.com</a>. ¡Gracias!
+          </p>
+        </div>
+      </section>
 
     </main>
 

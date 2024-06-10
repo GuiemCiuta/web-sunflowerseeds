@@ -48,18 +48,12 @@ sendBtn.addEventListener("click", async () => {
   const privacyPoliticsSignature = document.getElementById("privacy-politics-signature");
 
   if (!checkAllFieldsAreFilled()) {
-    alert("Por favor, rellena todos los campos");
+    alert(texts["contact.error.fillup_all_fields"]);
     return;
   }
 
   if (!privacyPoliticsSignature.checked) {
-    const privacyPoliticsMsg = {
-      es: "Por favor, lee y acepta las políticas de privacidad.",
-      ca: "Sisplau, llegiu i accepteu les polítiques de privacidat.",
-      en: "Please, read and agree to privacy politics."
-    };
-
-    alert(privacyPoliticsMsg[DEFAULT_LANG]);
+    alert(texts["contact.error.fillup_all_fields"]);
     return;
   }
 
