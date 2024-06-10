@@ -900,7 +900,7 @@ section {
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px), screen and (min-height: 1100px) {
   .hero__main-pic {
     width: 65%;
     margin-top: 2rem;
@@ -995,6 +995,11 @@ section {
   }
   #section-options + .scrollmagic-pin-spacer {
     padding: 0 !important;
+  }
+}
+@media screen and (min-height: 1100px) {
+  .share-text-container {
+    width: 40%;
   }
 }
 @media screen and (max-width: 500px) {

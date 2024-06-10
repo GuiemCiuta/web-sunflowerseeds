@@ -36,7 +36,7 @@ const featuresScene = new ScrollMagic.Scene({
   .addTo(controller); // assign the scene to the controller
 
 featuresScene.on("progress", function (event) {
-  if (window.innerWidth < WIDTH_BREAKPOINT) {
+  if (window.innerWidth < WIDTH_BREAKPOINT || window.innerHeight > HEIGHT_BREAKPOINT) {
     featuresScene.destroy();
     return;
   }
