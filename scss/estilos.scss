@@ -36,6 +36,10 @@ section {
   z-index: 5;
   transition: all .5s;
 
+  &__burger {
+    display: none;
+  }
+
   &__links {
     display: flex;
     justify-content: right;
@@ -1090,6 +1094,52 @@ screen and (min-height: $bigScreenHeightBreakpoint) {
 }
 
 @media screen and (max-width: 500px) {
+  .nav {
+    position: fixed;
+    height: 100%;
+    display: block;
+    padding: 0;
+    background-color: rgba(0, 0, 0, .9);
+
+    &__burger {
+      display: block;
+      position: relative;
+      float: right;
+      height: 3rem;
+      width: 5rem;
+      background-color: transparent;
+      border: none;
+    }
+
+    &__links {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+      top: 20vh;
+      right: 3rem;
+    }
+
+    &__li {
+      display: block;
+      width: 100%;
+      font-size: 2rem;
+    }
+
+    &.hidden {
+      height: auto;
+      background-color: rgba(0, 0, 0, .5);
+    }
+
+    &.hidden &__links {
+
+      display: none;
+    }
+  }
+
   .hero {
     padding: 1.5rem;
 

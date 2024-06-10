@@ -43,6 +43,9 @@ section {
   z-index: 5;
   transition: all 0.5s;
 }
+.nav__burger {
+  display: none;
+}
 .nav__links {
   display: flex;
   justify-content: right;
@@ -1023,6 +1026,45 @@ section {
   }
 }
 @media screen and (max-width: 500px) {
+  .nav {
+    position: fixed;
+    height: 100%;
+    display: block;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .nav__burger {
+    display: block;
+    position: relative;
+    float: right;
+    height: 3rem;
+    width: 5rem;
+    background-color: transparent;
+    border: none;
+  }
+  .nav__links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    top: 20vh;
+    right: 3rem;
+  }
+  .nav__li {
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+  }
+  .nav.hidden {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .nav.hidden .nav__links {
+    display: none;
+  }
   .hero {
     padding: 1.5rem;
   }
