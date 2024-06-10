@@ -72,6 +72,10 @@ section {
   min-height: 100vh;
   min-height: 100svh;
 }
+.main--crop {
+  position: relative;
+  overflow: hidden;
+}
 .main__title {
   font-size: 2.5rem;
   font-weight: 200;
@@ -431,7 +435,7 @@ section {
 }
 .letra-b--active {
   transition: all 0.3s;
-  color: #cf3939;
+  color: rgb(207, 57, 57);
 }
 
 .letra-d {
@@ -439,7 +443,7 @@ section {
 }
 .letra-d--active {
   transition: all 0.3s;
-  color: #42bb42;
+  color: rgb(66, 187, 66);
 }
 
 .paragraph {
@@ -639,12 +643,268 @@ section {
   opacity: 0.4;
 }
 
+.contact-form {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  padding: 1rem;
+  width: 90%;
+  border-radius: 2px;
+  background-color: white;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.contact-form.animation {
+  animation-name: contact-form-send;
+}
+@keyframes contact-form-send {
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  99% {
+    opacity: 1;
+    transform: translateY(12.3rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(12.3rem);
+  }
+}
+.contact-form__input {
+  border: 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+  margin-bottom: 1rem;
+}
+.contact-form__input--textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 5rem;
+  min-height: 5rem;
+}
+.contact-form__input--filled {
+  background-color: transparent;
+  transition: all 0.3s;
+}
+.contact-form__input:focus {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+}
+.contact-form__input {
+  display: block;
+  width: 100%;
+}
+.contact-form__privacy-politics-signature {
+  color: #1a1a1a;
+  margin-left: 0.3rem;
+}
+
+.form-sent-feedback {
+  position: absolute;
+  width: 90%;
+  box-sizing: border-box;
+  left: 50%;
+  top: 0;
+  margin-top: 15rem;
+  margin-bottom: 3rem;
+  transform: translate(-50%, 140vh);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.form-sent-feedback.animation {
+  animation-name: form-sent-feedback-send;
+}
+
+@keyframes form-sent-feedback-send {
+  0% {
+    transform: translate(-50%, 140vh);
+  }
+  100% {
+    transform: translate(-50%, 5rem);
+    opacity: 1;
+  }
+}
+.contact-envelope {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box !important;
+  padding: 2rem;
+  background-color: white;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2.6s;
+}
+.contact-envelope.animation {
+  animation-name: contact-envelope-send;
+}
+@keyframes contact-envelope-send {
+  0% {
+    transform: none;
+  }
+  40% {
+    transform: translateY(-7rem) scale(0.8);
+  }
+  43% {
+    transform: translateY(-7rem) scale(0.8);
+  }
+  100% {
+    transform: rotate(100deg) translateY(-7rem) translateX(-300%) scale(0.8);
+  }
+}
+.contact-envelope__pattern-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+.contact-envelope__pattern {
+  height: 220%;
+  width: 2rem;
+  position: absolute;
+  top: -12rem;
+  left: -22rem;
+  background-color: rgb(35, 35, 161);
+}
+.contact-envelope__pattern:nth-child(1) {
+  transform: translateX(0rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(2) {
+  transform: translateX(6rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(3) {
+  transform: translateX(12rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(4) {
+  transform: translateX(18rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(5) {
+  transform: translateX(24rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(6) {
+  transform: translateX(30rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(7) {
+  transform: translateX(36rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(8) {
+  transform: translateX(42rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(9) {
+  transform: translateX(48rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(10) {
+  transform: translateX(54rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(11) {
+  transform: translateX(60rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(12) {
+  transform: translateX(66rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(13) {
+  transform: translateX(72rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(14) {
+  transform: translateX(78rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(15) {
+  transform: translateX(84rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(16) {
+  transform: translateX(90rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(17) {
+  transform: translateX(96rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(18) {
+  transform: translateX(102rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(19) {
+  transform: translateX(108rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(20) {
+  transform: translateX(114rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(21) {
+  transform: translateX(120rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(22) {
+  transform: translateX(126rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(23) {
+  transform: translateX(132rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(24) {
+  transform: translateX(138rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(25) {
+  transform: translateX(144rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(26) {
+  transform: translateX(150rem) rotate(45deg);
+}
+.contact-envelope__pattern:nth-child(odd) {
+  background-color: rgb(189, 15, 15);
+}
+.contact-envelope__flap {
+  position: absolute;
+  transform: translateY(-100%);
+  top: 0.5px;
+  left: 0;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  aspect-ratio: 5/1;
+  width: 100%;
+  background-color: inherit;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: bottom;
+  animation-timing-function: ease-in;
+  animation-delay: 1.5s;
+}
+.contact-envelope__flap.animation {
+  animation-name: contact-form-flap;
+}
+@keyframes contact-form-flap {
+  0% {
+    transform: translateY(-100%) rotateX(0deg);
+  }
+  100% {
+    transform: translateY(-100%) rotateX(90deg);
+  }
+}
+.contact-envelope__body {
+  position: relative;
+  box-sizing: border-box;
+  padding: 2rem;
+  background-color: white;
+  height: 27rem;
+}
+.contact-envelope__recipient-info {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: #363636;
+  font-size: 1.2rem;
+}
+
 @media screen and (max-width: 1000px) {
   .hero__main-pic {
     width: 65%;
     margin-top: 2rem;
   }
-
   .blog-layout__paragraph {
     width: 100%;
     text-align: justify;
@@ -657,7 +917,6 @@ section {
     width: 100%;
     height: 12rem;
   }
-
   .screens-carousel {
     margin-top: 5rem;
   }
@@ -667,28 +926,22 @@ section {
   .screens-carousel__pic:first-child {
     margin-left: 5rem;
   }
-
   .section--features {
     height: initial;
   }
-
   .features-explanation-wrapper {
     display: none;
   }
-
   .features-wrapper {
     width: 100%;
     transform: none;
   }
-
   .feature {
     max-width: initial;
   }
-
   .paragraph--half-width {
     width: 100%;
   }
-
   .share-text-container {
     width: 100%;
     position: relative;
@@ -711,7 +964,6 @@ section {
     position: absolute;
     animation: share-text-move-text 3s infinite;
   }
-
   @keyframes share-text-move-text {
     from {
       transform: translateY(-200%);
@@ -741,7 +993,6 @@ section {
     width: 30%;
     display: none;
   }
-
   #section-options + .scrollmagic-pin-spacer {
     padding: 0 !important;
   }
@@ -783,19 +1034,16 @@ section {
   .hero__sunflower {
     height: 5rem;
   }
-
   .highlight-letters {
     width: 100%;
     min-width: initial;
   }
-
   .screens-carousel {
     margin-top: 5rem;
   }
   .screens-carousel__pic {
     height: 40%;
   }
-
   .options {
     display: block;
     width: 100%;
@@ -803,11 +1051,9 @@ section {
   .options__opcion {
     margin-bottom: 5rem;
   }
-
   .section__computer--2 {
     margin-top: 12rem;
   }
-
   .alternatives-list {
     display: block;
     text-align: center;
