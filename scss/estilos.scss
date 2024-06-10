@@ -68,7 +68,7 @@ section {
   padding: 2rem;
   min-height: 100vh;
   min-height: 100svh;
-  
+
   &--crop {
     position: relative;
     overflow: hidden;
@@ -595,6 +595,28 @@ section {
   }
 }
 
+.enlace-boton {
+  padding: 1rem 1.3rem;
+  background-color: $purple;
+  color: $white;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 300px;
+  text-decoration: none;
+  transition: all 0.1s;
+  white-space: nowrap;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.1s;
+  }
+
+  &:active {
+    transform: scale(0.97);
+    transition: all 0.1s;
+  }
+}
+
 .feature-trigger {
   border: none;
   border-radius: 50%;
@@ -933,7 +955,8 @@ $envelopeSend: 3s;
 }
 
 
-@media screen and (max-width: 1000px), screen and (min-height: $bigScreenHeightBreakpoint) {
+@media screen and (max-width: 1000px),
+screen and (min-height: $bigScreenHeightBreakpoint) {
   .hero {
     &__main-pic {
       width: 65%;

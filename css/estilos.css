@@ -541,6 +541,26 @@ section {
   line-height: 1.7rem;
 }
 
+.enlace-boton {
+  padding: 1rem 1.3rem;
+  background-color: #5401d0;
+  color: white;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 300px;
+  text-decoration: none;
+  transition: all 0.1s;
+  white-space: nowrap;
+}
+.enlace-boton:hover {
+  transform: scale(1.02);
+  transition: all 0.1s;
+}
+.enlace-boton:active {
+  transform: scale(0.97);
+  transition: all 0.1s;
+}
+
 .feature-trigger {
   border: none;
   border-radius: 50%;
@@ -900,7 +920,7 @@ section {
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 1000px), screen and (min-height: 1100px) {
+@media screen and (max-width: 1000px), screen and (min-height: 1000px) {
   .hero__main-pic {
     width: 65%;
     margin-top: 2rem;
@@ -997,7 +1017,7 @@ section {
     padding: 0 !important;
   }
 }
-@media screen and (min-height: 1100px) {
+@media screen and (min-height: 1000px) {
   .share-text-container {
     width: 40%;
   }
