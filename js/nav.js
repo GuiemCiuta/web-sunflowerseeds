@@ -2,8 +2,14 @@ const nav = document.getElementById("nav");
 
 
 document.addEventListener("DOMContentLoaded", function () {
+  nav.classList.add("hidden");
+
   document.getElementById("nav").innerHTML = `
-  <button class="nav__burger" onClick="handleNavBar()">Click</button>
+  <button class="nav__burger" onClick="handleNavBar()">
+      <div class="nav__burger-bar"></div>
+      <div class="nav__burger-bar"></div>
+      <div class="nav__burger-bar"></div>
+  </button>
   <ul class="nav__links">
         <li class="nav__li">
           <a href="./index.html" class="nav__link" data-role="nav.home"

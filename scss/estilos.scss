@@ -83,7 +83,7 @@ section {
     font-weight: 200;
     line-height: 2.7rem;
     margin: 0;
-    margin-top: 1rem;
+    margin-top: 3rem;
     padding: 0;
     color: white;
   }
@@ -781,7 +781,9 @@ $envelopeSend: 3s;
   &__input {
     border: 0;
     padding: 0.5rem;
+    width: 100%;
     font-size: 1rem;
+    box-sizing: border-box;
     border-radius: 7px;
     background-color: rgba(0, 0, 0, 0.05);
     transition: all 0.3s;
@@ -1102,14 +1104,52 @@ screen and (min-height: $bigScreenHeightBreakpoint) {
     background-color: rgba(0, 0, 0, .9);
 
     &__burger {
-      display: block;
       position: relative;
+      display: flex;
       float: right;
-      height: 3rem;
-      width: 5rem;
+      height: 4rem;
+      width: 3.10rem;
+      flex-direction: column;
+      justify-content: center;
+      gap: .5rem;
       background-color: transparent;
       border: none;
+      cursor: pointer;
     }
+    
+    &__burger-bar {
+      width: 100%;
+      height: 3px;
+      background-color: $white;
+      border-radius: 10px;
+      transform-origin: 0.2rem;
+      transition: all 0.3s;
+    }
+    
+    &__burger-bar:nth-child(1) {
+      transform: rotate(45deg);
+    }
+    
+    &__burger-bar:nth-child(2) {
+      opacity: 0;
+    }
+    
+    &__burger-bar:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+
+    .hidden &__burger-bar:nth-child(1) {
+      transform: rotate(0);
+    }
+    
+    .hidden &__burger-bar:nth-child(2) {
+      opacity: 1;
+    }
+    
+    .hidden &__burger-bar:nth-child(3) {
+      transform: rotate(0);
+    }
+
 
     &__links {
       position: absolute;
@@ -1131,12 +1171,8 @@ screen and (min-height: $bigScreenHeightBreakpoint) {
 
     &.hidden {
       height: auto;
+      overflow-y: hidden;
       background-color: rgba(0, 0, 0, .5);
-    }
-
-    &.hidden &__links {
-
-      display: none;
     }
   }
 
