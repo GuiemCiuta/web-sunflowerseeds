@@ -16,7 +16,7 @@ async function fetchLang(lang) {
     }
 
     try {
-        const res = await fetch(`./langs/${lang}.json`);
+        const res = await fetch(`./langs/${lang}.min.json`);
         texts = await res.json();
 
         for (let i = 0; i < Object.keys(texts).length; i++) {
